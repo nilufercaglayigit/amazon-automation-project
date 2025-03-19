@@ -8,9 +8,8 @@ class SearchPage(BasePage):
     SIMILAR_PRODUCT_CAPTION = (By.XPATH, "//h2[text()='Benzer aramalar']")
     PAGE_NUMBER_2_BUTTON = (By.CSS_SELECTOR, "a[aria-label='2 sayfasına git']")
     SELECTED_PAGE = (By.CSS_SELECTOR, 's-pagination-selected')
-    # PRODUCT_IMAGE = (By.CSS_SELECTOR, 'div[role="listitem"]:nth-of-type(5)')
-    PRODUCT_IMAGE = (By.CSS_SELECTOR, ".s-main-slot .s-result-item:nth-of-type(5)")
-    # PRODUCT_IMAGE = (By.XPATH, '//*[contains(@class, "widgetId=search-results_3")]')
+    #PRODUCT_IMAGE = (By.CSS_SELECTOR, ".s-main-slot .s-result-item:nth-of-type(5)")
+    PRODUCT_IMAGE = (By.XPATH, '(//div[@role="listitem"])[3]')
     # PRODUCT_IMAGE = (By.CSS_SELECTOR, '[class*="widgetId=search-results_3"]')
     page_number_link = 'page=2'
     search_samsung = 'samsung'
